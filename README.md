@@ -1,10 +1,10 @@
 # post-flexbox
 
-# Projeto 04 (Trilha Simplificada) - Barra de Navegação Horizontal
+# Projeto 03 (Trilha Simplificada) - Componente de Post com Flexbox
 
  
 
-Este projeto aplica e aprofunda os conhecimentos de Flexbox para criar um dos componentes mais comuns e essenciais de um website: a barra de navegação.
+Este projeto introduz o conceito mais fundamental de layout em CSS moderno: o Flexbox.
 
  
 
@@ -12,7 +12,7 @@ Este projeto aplica e aprofunda os conhecimentos de Flexbox para criar um dos co
 
  
 
-O projeto consiste em um cabeçalho (header) com um logotipo posicionado à esquerda e um menu de navegação à direita. O foco principal é o uso da propriedade `justify-content` do Flexbox para distribuir elementos e o aninhamento de Flexbox para criar o menu.
+O projeto consiste em um único componente que simula a chamada para um post de blog, com uma imagem posicionada ao lado de um bloco de texto. O objetivo principal é aprender a usar a propriedade `display: flex` para alinhar elementos horizontalmente e controlar seu alinhamento e espaçamento.
 
  
 
@@ -20,23 +20,21 @@ O projeto consiste em um cabeçalho (header) com um logotipo posicionado à esqu
 
  
 
-- **HTML5 Semântico**:
-
-  - Uso correto das tags `<header>`, `<nav>`, `<ul>` e `<li>` para estruturar uma navegação.
-
 - **CSS3 Flexbox**:
 
-  - Aprofundamento com a propriedade `justify-content: space-between` para alinhar itens nas extremidades de um container.
+  - Introdução à propriedade `display: flex` para criar um "Flex Container".
 
-  - **Flexbox Aninhado**: Utilização de `display: flex` em um elemento que já é filho de outro container flex.
+  - Alinhamento vertical de itens com `align-items: center`.
 
-- **Estilização de Links e Menus**:
+  - Criação de espaçamento entre itens com a propriedade `gap`.
 
-  - Remoção de estilos padrão de listas com `list-style: none`.
+- **HTML5**:
 
-  - **Pseudo-classe `:hover`**: Para criar interatividade e feedback visual para o usuário.
+  - Estruturação de um componente com um elemento pai (container) e elementos filhos (itens).
 
-  - **`transition`**: Para adicionar animações suaves aos efeitos de `:hover`.
+- **Controle de Imagens**:
+
+  - Uso de `object-fit: cover` para garantir que a imagem preencha um espaço definido sem distorção.
 
  
 
@@ -44,7 +42,8 @@ O projeto consiste em um cabeçalho (header) com um logotipo posicionado à esqu
 
  
 
-1. Clone este repositório.
+1. Baixe uma imagem e coloque-a na pasta `assets`.
 
-2. Abra o arquivo `index.html` em seu navegador.
+2. Atualize o caminho da imagem no atributo `src` da tag `<img>`.
 
+3. Abra o arquivo `index.html` em seu navegador.
